@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #07a7a1;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.header img {
+  height: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.products,
+.add-product {
+  width: 45%;
+}
+
+.products h2,
+.add-product h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.product-item {
+  border: 2px solid #07a7a1;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+.product-item p {
+  margin: 0;
+  color: #555;
+}
+
+.product-item .delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-product form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-product form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #07a7a1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-product form button#clear-form {
+  background-color: #d12525;
+}
+
+#product-form input{
+  border-radius: 20px;
+  width: 690px;
+  height: 40px;
+}
+
+.bot{
+
+  width: 690px;
+  height: 60px;
+  margin: 9px;
+  
+
+}
+
+
+
+.footer {
+  background-color: #07a7a1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-product,
+  .products {
+    width: 80%;
+    max-width: none;
+  }
+}
